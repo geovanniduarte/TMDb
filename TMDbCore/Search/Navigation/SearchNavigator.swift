@@ -24,5 +24,7 @@ final class SearchNavigator {
         searchController.searchBar.placeholder = NSLocalizedString("Search movies, shows and people", comment: "")
         searchController.searchBar.searchBarStyle = .minimal
         
+        viewController.navigationItem.titleView = searchController.searchBar
+        viewController.definesPresentationContext = true // para que la interfaz de busqueda no tape tod.
     }
 }
